@@ -1,0 +1,41 @@
+.user {
+  display: flex;
+  position: relative;
+}
+  
+.user_icon {
+  height: 20px; 
+  width: 20px;  
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  position: relative; 
+}
+  
+.intial_text {
+  font-size: 0.8rem; 
+}
+  
+/* ONLINE STATUS */
+.dot {
+  position: absolute;
+  bottom: -2px; 
+  right: -2px;  
+  height: 6px; 
+  width: 6px;  
+  background-color: grey;  
+  border-radius: 50%; 
+  border: 2px solid white; 
+  z-index: 1; 
+}
+  
+.dot.available {
+  background-color: #50B053; 
+}
+  
+
+ 

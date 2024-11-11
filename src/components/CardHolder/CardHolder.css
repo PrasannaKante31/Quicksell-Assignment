@@ -1,0 +1,90 @@
+.card_holder {
+    display:flex;
+    padding: 5px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.card_holder_header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 5px;
+    width: 95%;
+    text-transform: capitalize;
+}
+
+.card_holder_header_name {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_holder_header_name p {
+    font-weight: 500;
+}
+
+.card_holder_header_name span {
+    color: gray;
+}
+
+.card_holder_header_name svg {
+    height: 15px;
+    width: 15px;
+}
+
+.card_holder_header_options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.5;
+    transition: 200ms;
+}
+
+.card_holder_header:hover .card_holder_header_options {
+    opacity: 1;
+}
+
+.card_holder_header_options svg {
+    height: 20px;
+    width: 20px;
+    color: grey;
+    transition: 200ms;
+}
+
+.card_holder_header_options svg:hover {
+    color: black;
+}
+
+.card_holder_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+/* RESPONSIVE PARAMETERS */
+
+@media (min-width: 1210px) {
+    .card_holder {
+        width: 16vw;
+    }
+}
+
+@media (max-width: 1210px) and (min-width: 768px) {
+    .card_holder {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_holder {
+        width: 70vw; 
+    }
+}
+
+  
